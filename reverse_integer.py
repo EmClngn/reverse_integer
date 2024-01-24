@@ -4,5 +4,9 @@
 
 # ask user for number input
 number = input("What is your desired number?: ")
-print(number)
+
+reverse  = ""
 # use for loop to reverse the numbers
+for i in range (len(number), 0, -1):
+    reverse += number[i - 1]
+print(reverse)
